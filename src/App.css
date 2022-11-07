@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+  font-family: 'Comfortaa', cursive;
+  background-color: rgba(245, 206, 206, 0.665);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.male{
+  background-color: #C2DFF1;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.female{
+  background-color: #F3D2DD;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.inputText{
+  resize: none;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-family: 'Comfortaa', cursive;
+  border-radius: 15px;
+  box-shadow: 0 0 3px black;
+  border: none;
+  transition: 0.1s;
+}
+
+.inputText:focus{
+  border:none;
+  outline: none;
+  box-shadow: 0 0 6px black;
+}
+
+.inputsBottom{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+}
+
+.inputYears{
+  width: 50px;
+  height: 50px;
+  font-family: 'Comfortaa', cursive;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  transition: 0.1s;
+}
+
+.radioContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+}
+
+.radioInput{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 5px;
+}
+
+.radioInput input{
+ cursor: pointer;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+.inputSubmit{
+  font-family: 'Comfortaa', cursive;
+  display: flex;
+  width: 150px;
+  height: 40px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: #54AA00;
   color: white;
+  border: none;
+  transition: 0.1s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputSubmit:active{
+  background-color: #ade673;
+  transform: scale(1.05);
 }
