@@ -3,17 +3,19 @@ import styled from "styled-components"
 import { FaMale } from 'react-icons/fa';
 import { FaFemale } from 'react-icons/fa';
 
-
-
 const ItemContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   min-height:100px;
   height: fit-content;
   background-color: #fff;
   margin-bottom: 50px;
   border-radius: 25px;
+  
+  @media (min-width: 768px) {
+    width: 80%;
+  }
 `
 
 const ItemText = styled.div`
@@ -21,8 +23,14 @@ const ItemText = styled.div`
   width: 95%;
   align-self: center;
   height: 100%;
-  padding: 10px 0;
+  padding: 10px 10px;
   word-break: break-all;
+  font-size: 0.8rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
 `
 
 const ItemDate = styled.div`
@@ -36,12 +44,24 @@ const ItemDataContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
+  font-size: 0.9rem;
+  font-weight: 900;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
   `
 
 const ItemAnon = styled.div`
-    font-style: italic;
-    font-size: 0.8rem;
-    color: gray;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: gray;
+  font-size: 0.45rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+  
 `
 
 const ItemEdad = styled.div`

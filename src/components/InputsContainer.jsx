@@ -4,8 +4,13 @@ import { createPost } from "../services/firebase"
 
 const Container = styled.div`
   height: fit-content;
-  width: 800px;
   margin: 50px 0;
+  min-width: 300px;
+  width: 90%;
+
+  @media (min-width: 768px) {
+    width: 800px;
+  }
 `
 
 function InputsContainer() {
@@ -33,7 +38,6 @@ function InputsContainer() {
       date: dateToString(),
     };
 
-    console.log(dataForm)
     createPost(orderData)
     };
 
@@ -57,7 +61,7 @@ function InputsContainer() {
               onChange={inputChangeHandler}
               name="secret"
               type="text"
-              maxlength="1000"
+              maxLength="1000"
               placeholder="Tell your anonymous secret"
               required
             />

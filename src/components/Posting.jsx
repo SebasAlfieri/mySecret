@@ -11,8 +11,13 @@ const PostingContainer = styled.div`
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
-  width: 1000px;
+  width: 90%;
+  min-width: 350px;
   height: fit-content;
+
+  @media (min-width: 768px) {
+    width: 1000px;
+  }
 `
 
 
@@ -33,9 +38,6 @@ function Posting() {
 
 
 
-
-
-  console.log(getItems())
   return (
     <PostingContainer>
       <InputsContainer>
