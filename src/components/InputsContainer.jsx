@@ -87,6 +87,7 @@ function InputsContainer() {
               </div>
             </div>
             <select className='inputYears' name="years" required onChange={inputChangeHandler}>
+                  <option value="">Age</option>
                   <option value="10">10</option>
                   <option value="11">11</option>
                   <option value="12">12</option>
