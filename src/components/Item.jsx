@@ -54,12 +54,11 @@ const ItemDataContainer = styled.div`
 
 const ItemAnon = styled.div`
   font-style: italic;
-  font-size: 0.8rem;
   color: gray;
   font-size: 0.45rem;
 
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   
 `
