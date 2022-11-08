@@ -5,10 +5,6 @@ function PostsLists(props) {
 
   const [value, setValue] = useState();
 
-  const refresh = ()=>{
-     setValue({});
-  }
-
   return (
     <>
       {props.data.map((item) => {
