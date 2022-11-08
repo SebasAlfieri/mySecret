@@ -29,7 +29,7 @@ const ItemText = styled.div`
 
   @media (min-width: 768px) {
     font-size: 1rem;
-    padding: 10px 0;
+    padding: 15px 0;
   }
 `
 
@@ -37,6 +37,13 @@ const ItemDate = styled.div`
   position: relative;
   width: fit-content;
   left: 35%;
+  color: gray;
+  font-size: 0.8rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    padding: 15px 0;
+  }
 `
 
 const ItemDataContainer = styled.div`

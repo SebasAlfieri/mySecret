@@ -105,3 +105,19 @@ body{
   background-color: #ade673;
   transform: scale(1.05);
 }
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #696465;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #242021;
+}
