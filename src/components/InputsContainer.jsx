@@ -95,6 +95,7 @@ function InputsContainer() {
           name="secret"
           type="text"
           maxLength="1000"
+          minLength="10"
           placeholder="Tell your anonymous secret"
           required
         />
