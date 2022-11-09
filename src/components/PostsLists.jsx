@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
-import Item from './Item';
+import React, { useState } from "react";
+import Item from "./Item";
 
 function PostsLists(props) {
-
   const [value, setValue] = useState();
 
   return (
@@ -20,7 +19,7 @@ function PostsLists(props) {
         );
       })}
     </>
-  )
+  );
 }
 
-export default PostsLists
+export default PostsLists;

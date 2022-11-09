@@ -13,7 +13,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app)
 
-
 export async function getItems(){
   const collectionRef = collection(firestore, "posting")
   let respuesta = await getDocs(collectionRef)
@@ -32,9 +31,6 @@ export async function getItems(){
     
     return respuesta.id
   }
-
-
-
 
 export default app;
 export { firestore }

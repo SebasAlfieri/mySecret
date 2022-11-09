@@ -1,48 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-
-body{
-  font-family: 'Comfortaa', cursive;
+body {
+  font-family: "Comfortaa", cursive;
   background-color: rgba(245, 206, 206, 0.665);
 }
 
-.male{
-  background-color: #C2DFF1;
+.male {
+  background-color: #c2dff1;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
 
-.female{
-  background-color: #F3D2DD;
+.female {
+  background-color: #f3d2dd;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
 
-.inputText{
+.inputText {
   resize: none;
   width: 100%;
   height: 100px;
   padding: 10px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   border-radius: 15px;
   box-shadow: 0 0 3px black;
   border: none;
   transition: 0.1s;
 }
 
-.inputText:focus{
-  border:none;
+.inputText:focus {
+  border: none;
   outline: none;
   box-shadow: 0 0 6px black;
 }
 
-.inputsBottom{
+.inputsBottom {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -53,17 +52,17 @@ body{
   justify-self: center;
 }
 
-.inputYears{
+.inputYears {
   width: 50px;
   height: 50px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   border-radius: 15px;
   outline: none;
   border: none;
   transition: 0.1s;
 }
 
-.radioContainer{
+.radioContainer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -71,22 +70,22 @@ body{
   height: 50px;
 }
 
-.radioInput{
+.radioInput {
   display: flex;
   flex-direction: column;
   margin: 5px;
 }
 
-.radioInput input{
- cursor: pointer;
- -webkit-user-select: none;
- -moz-user-select: none;
- -ms-user-select: none;
- user-select: none;
+.radioInput input {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.inputSubmit{
-  font-family: 'Comfortaa', cursive;
+.inputSubmit {
+  font-family: "Comfortaa", cursive;
   display: flex;
   width: 150px;
   height: 40px;
@@ -95,19 +94,19 @@ body{
   margin: auto;
   margin-top: 20px;
   border-radius: 15px;
-  background-color: #54AA00;
+  background-color: #54aa00;
   color: white;
   border: none;
   transition: 0.1s;
 }
 
-.inputSubmit:active{
+.inputSubmit:active {
   background-color: #ade673;
   transform: scale(1.05);
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
