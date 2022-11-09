@@ -131,11 +131,7 @@ function InputsContainer() {
           >
             <option value="">Age</option>
             {newArr.map((number) => {
-              return [
-                <option key={number} value={number}>
-                  {number}
-                </option>,
-              ];
+              return <option key={number} value={number}>{number}</option>
             })}
           </select>
           <label htmlFor="years">Age</label>
